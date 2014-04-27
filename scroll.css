@@ -1,0 +1,37 @@
+.thecotne_scroll_top_btn {
+	z-index: 2147483647 !important;
+	display: block !important;
+	position: fixed !important;
+	right: 10px !important;
+	top: 10px !important;
+	height: 50px !important;
+	width: 50px !important;
+	border-radius: 5px !important;
+	background-color: rgba(61, 117, 162, 0.7) !important;
+	text-decoration: none !important;
+	cursor: pointer !important;
+	pointer-events: none;
+	opacity: 0;
+	transition: all 200ms linear;
+}
+a.thecotne_scroll_top_btn:hover {
+	background-color: rgba(61, 117, 162, 1) !important;
+}
+.thecotne_scroll_top_btn:after {
+	display: block !important;
+	content:"\21E7" !important;
+	text-decoration: none !important;
+	color: #fff !important;
+	overflow: hidden !important;
+	height: 33px !important;
+	position: relative !important;
+	pointer-events: none !important;
+	font-weight: normal;
+	font-style: normal;
+	font-family: arial;
+	font-size: 208px !important;
+	line-height: 190px !important;
+	left: -54px !important;
+	width: 116px !important;
+}
+
