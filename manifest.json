@@ -19,5 +19,18 @@
 		"js": ["scroll.js"],
 		"css": ["scroll.css"],
 		"run_at": "document_start"
+	}, {
+		"js": ["youtube.js"],
+		"matches": ["*://*.youtube.com/*"],
+		"run_at": "document_end"
+	}, {
+		"css": ["myvideo.css"],
+		"js": ["myvideo.js"],
+		"matches": ["*://*.myvideo.ge/*"],
+		"run_at": "document_end"
+	}, {
+		"js": ["facebook.js"],
+		"matches": ["*://*.facebook.com/*"],
+		"run_at": "document_end"
 	}]
 }
