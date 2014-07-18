@@ -10,9 +10,9 @@
 	background-color: rgba(61, 117, 162, 0.7) !important;
 	text-decoration: none !important;
 	cursor: pointer !important;
-	pointer-events: none;
-	opacity: 0;
-	transition: all 200ms linear;
+	pointer-events: none !important;
+	opacity: 0 !important;
+	transition: all 200ms linear !important;
 }
 a.thecotne_scroll_top_btn:hover {
 	background-color: rgba(61, 117, 162, 1) !important;
@@ -26,9 +26,9 @@ a.thecotne_scroll_top_btn:hover {
 	height: 33px !important;
 	position: relative !important;
 	pointer-events: none !important;
-	font-weight: normal;
-	font-style: normal;
-	font-family: arial;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-family: arial !important;
 	font-size: 208px !important;
 	line-height: 190px !important;
 	left: -54px !important;
