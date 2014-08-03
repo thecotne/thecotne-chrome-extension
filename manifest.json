@@ -1,6 +1,6 @@
 {
 	"name": "thecotne",
-	"version": "2.0.2",
+	"version": "2.1.0",
 	"manifest_version": 2,
 	"description": "thecotne",
 	"icons": {
@@ -10,26 +10,26 @@
 		"128": "icons/icon128.png"
 	},
 	"content_scripts": [{
-		"matches": ["<all_urls>"],
+		"js": ["google/google.js"],
 		"include_globs": ["*://*.google.*/*"],
-		"js": ["google.js"],
-		"run_at": "document_start"
-	}, {
 		"matches": ["<all_urls>"],
-		"js": ["scroll.js"],
-		"css": ["scroll.css"],
 		"run_at": "document_start"
 	}, {
-		"js": ["youtube.js"],
+		"js": ["scroll/scroll.js"],
+		"css": ["scroll/scroll.css"],
+		"matches": ["<all_urls>"],
+		"run_at": "document_start"
+	}, {
+		"js": ["youtube/youtube.js"],
 		"matches": ["*://*.youtube.com/*"],
 		"run_at": "document_end"
 	}, {
-		"css": ["myvideo.css"],
-		"js": ["myvideo.js"],
+		"css": ["myvideo/myvideo.css"],
+		"js": ["myvideo/myvideo.js"],
 		"matches": ["*://*.myvideo.ge/*"],
 		"run_at": "document_end"
 	}, {
-		"js": ["facebook.js"],
+		"js": ["facebook/facebook.js"],
 		"matches": ["*://*.facebook.com/*"],
 		"run_at": "document_end"
 	}]
