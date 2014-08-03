@@ -9,6 +9,13 @@
 		"48": "icons/icon48.png",
 		"128": "icons/icon128.png"
 	},
+	"web_accessible_resources": [
+		"forumge/img/*",
+		"forumge/forumge.css"
+	],
+	"permissions": [
+		"http://www.picz.ge/*"
+	],
 	"content_scripts": [{
 		"js": ["google/google.js"],
 		"include_globs": ["*://*.google.*/*"],
@@ -31,6 +38,10 @@
 	}, {
 		"js": ["facebook/facebook.js"],
 		"matches": ["*://*.facebook.com/*"],
+		"run_at": "document_end"
+	}, {
+		"js": ["forumge/forumge.js"],
+		"matches": ["*://forum.ge/*"],
 		"run_at": "document_end"
 	}]
 }

@@ -1,0 +1,14 @@
+#forum_plus_imagepost {
+	display: block;
+	position: absolute;
+	margin-left: -40px;
+	margin-top: 0px;
+	background-image: url('./img/image_add.png');
+	background-size: 30px 30px;
+	height: 30px;
+	width: 30px;
+}
+#forum_plus_imagepost.loading{
+	background-image: url('./img/loading.gif');
+}
+
