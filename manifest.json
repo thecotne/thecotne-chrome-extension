@@ -22,11 +22,6 @@
 		"matches": ["<all_urls>"],
 		"run_at": "document_start"
 	}, {
-		"js": ["scroll/scroll.js"],
-		"css": ["scroll/scroll.css"],
-		"matches": ["<all_urls>"],
-		"run_at": "document_start"
-	}, {
 		"js": ["youtube/youtube.js"],
 		"matches": ["*://*.youtube.com/*"],
 		"run_at": "document_end"
