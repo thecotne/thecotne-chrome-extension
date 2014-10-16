@@ -35,7 +35,7 @@ document.addEventListener('DOMNodeInserted', function(e){
 	if (e.target.id == 'hdtb'
 		|| (
 			e.target.classList
-			&& e.target.classList.contains('r-top_nav1')
+			&& e.target.classList.contains('r-top_nav-1')
 		)
 	) {
 		insert_translate_button();
