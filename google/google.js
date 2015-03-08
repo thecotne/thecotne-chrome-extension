@@ -6,7 +6,7 @@ function update_href(translate_button_a,e){
 	translate_button_a.setAttribute('href', translate_link( this.value ) );
 };
 function insert_translate_button(){
-	var input = document.getElementById('gbqfq');
+	var input = document.getElementById('lst-ib');
 	var more_button = document.getElementById('hdtb_more');
 	var more_div = document.getElementById('hdtb_more_mn');
 	if ( input && more_button && more_div ) {
@@ -32,12 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	insert_translate_button();
 });
 document.addEventListener('DOMNodeInserted', function(e){
-	if (e.target.id == 'hdtb'
-		|| (
-			e.target.classList
-			&& e.target.classList.contains('r-top_nav-1')
-		)
-	) {
+	if (e.target.id == 'hdtb' || (e.target.querySelector && e.target.querySelector('#hdtb'))) {
 		insert_translate_button();
 	};
 });
