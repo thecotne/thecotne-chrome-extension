@@ -22,10 +22,6 @@
 		"matches": ["<all_urls>"],
 		"run_at": "document_start"
 	}, {
-		"js": ["youtube/youtube.js"],
-		"matches": ["*://*.youtube.com/*"],
-		"run_at": "document_end"
-	}, {
 		"css": ["myvideo/myvideo.css"],
 		"js": ["myvideo/myvideo.js"],
 		"matches": ["*://*.myvideo.ge/*"],
