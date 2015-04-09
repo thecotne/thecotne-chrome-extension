@@ -27,8 +27,8 @@ document.addEventListener('scroll', scroll, false);
 function scrollLoop(beginTime, duration, scrollFrom) {
 	var timePassed = (new Date()).getTime() - beginTime;
 	var timeLeft = duration - timePassed;
-	document.body.scrollTop = timeLeft * (scrollFrom/duration)
+	document.body.scrollTop = timeLeft * (scrollFrom / duration)
 	if (timePassed < duration) {
-		requestAnimationFrame(scrollLoop.bind(undefined,beginTime, duration, scrollFrom));
+		requestAnimationFrame(scrollLoop.bind(undefined, beginTime, duration, scrollFrom));
 	}
 }
