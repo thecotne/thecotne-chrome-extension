@@ -8,11 +8,10 @@ function updateHref(translateButtonA, e) {
 
 function insertTranslateButton() {
 	var input = document.getElementById('lst-ib');
-	var moreButton = document.getElementById('hdtb_more');
-	var moreDiv = document.getElementById('hdtb_more_mn');
-	if (input && moreButton && moreDiv) {
+	var moreButton = document.getElementById('hdtb-more');
+	if (input && moreButton) {
 		var translateButton = document.createElement('div');
-		translateButton.className = 'hdtb_mitem';
+		translateButton.className = 'hdtb-mitem hdtb-imb';
 		var translateButtonA = document.createElement('a');
 		translateButtonA.className = 'q qs';
 		translateButtonA.href = translateLink(input.value);
@@ -31,5 +30,4 @@ function DOMNodeInserted(e) {
 	}
 }
 
-document.addEventListener('DOMContentLoaded', insertTranslateButton);
 document.addEventListener('DOMNodeInserted', DOMNodeInserted);
