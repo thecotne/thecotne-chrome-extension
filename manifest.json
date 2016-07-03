@@ -1,38 +1,38 @@
 {
-	"name": "thecotne",
-	"version": "2.3.2",
-	"manifest_version": 2,
-	"description": "extension for thecotne",
-	"icons": {
-		"16": "icons/icon16.png",
-		"19": "icons/icon19.png",
-		"48": "icons/icon48.png",
-		"128": "icons/icon128.png"
-	},
-	"web_accessible_resources": [
-		"forumge/img/*",
-		"forumge/forumge.css"
-	],
-	"permissions": [
-		"http://www.picz.ge/*"
-	],
-	"content_scripts": [{
-		"js": ["google/google.js"],
-		"include_globs": ["*://*.google.*/*"],
-		"matches": ["<all_urls>"],
-		"run_at": "document_start"
-	}, {
-		"css": ["myvideo/myvideo.css"],
-		"js": ["myvideo/myvideo.js"],
-		"matches": ["*://*.myvideo.ge/*"],
-		"run_at": "document_end"
-	}, {
-		"js": ["facebook/facebook.js"],
-		"matches": ["*://*.facebook.com/*"],
-		"run_at": "document_end"
-	}, {
-		"js": ["forumge/forumge.js"],
-		"matches": ["*://forum.ge/*"],
-		"run_at": "document_end"
-	}]
+    "name": "thecotne",
+    "version": "2.3.2",
+    "manifest_version": 2,
+    "description": "extension for thecotne",
+    "icons": {
+        "16": "icons/icon16.png",
+        "19": "icons/icon19.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "web_accessible_resources": [
+        "forumge/img/*",
+        "forumge/forumge.css"
+    ],
+    "permissions": [
+        "http://www.picz.ge/*"
+    ],
+    "content_scripts": [{
+        "js": ["google/google.js"],
+        "include_globs": ["*://*.google.*/*"],
+        "matches": ["<all_urls>"],
+        "run_at": "document_start"
+    }, {
+        "css": ["myvideo/myvideo.css"],
+        "js": ["myvideo/myvideo.js"],
+        "matches": ["*://*.myvideo.ge/*"],
+        "run_at": "document_end"
+    }, {
+        "js": ["facebook/facebook.js"],
+        "matches": ["*://*.facebook.com/*"],
+        "run_at": "document_end"
+    }, {
+        "js": ["forumge/forumge.js"],
+        "matches": ["*://forum.ge/*"],
+        "run_at": "document_end"
+    }]
 }
