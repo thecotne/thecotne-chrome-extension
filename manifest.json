@@ -14,7 +14,8 @@
         "forumge/forumge.css"
     ],
     "permissions": [
-        "http://www.picz.ge/*"
+        "http://www.picz.ge/*",
+        "storage"
     ],
     "content_scripts": [{
         "js": ["google/google.js"],
@@ -34,5 +35,9 @@
         "js": ["forumge/forumge.js"],
         "matches": ["*://forum.ge/*"],
         "run_at": "document_end"
-    }]
+    }],
+    "options_ui": {
+        "page": "src/options/index.html",
+        "chrome_style": true
+    }
 }
