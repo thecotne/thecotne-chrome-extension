@@ -1,14 +1,17 @@
-#forum_plus_imagepost {
+.thecotne-imageupload {
 	display: block;
 	position: absolute;
 	margin-left: -40px;
 	margin-top: 0px;
-	background-image: url('./img/image_add.png');
-	background-size: 30px 30px;
-	height: 30px;
-	width: 30px;
-}
-#forum_plus_imagepost.loading{
-	background-image: url('./img/loading.gif');
+    text-decoration: none !important;
 }
 
+.thecotne-imageupload::after {
+    content: "🖼";
+    display: block;
+    font: 35px/1 "Apple Color Emoji";
+}
+
+.thecotne-imageupload.loading::after {
+    content: "⌛";
+}

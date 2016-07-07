@@ -9,12 +9,7 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "web_accessible_resources": [
-    "forumge/img/*",
-    "forumge/forumge.css"
-  ],
   "permissions": [
-    "http://www.picz.ge/*",
     "storage"
   ],
   "content_scripts": [{
@@ -32,6 +27,7 @@
     "matches": ["*://*.facebook.com/*"],
     "run_at": "document_end"
   }, {
+    "css": ["forumge/forumge.css"],
     "js": ["forumge/forumge.js"],
     "matches": ["*://forum.ge/*"],
     "run_at": "document_end"
