@@ -18,11 +18,6 @@
     "matches": ["<all_urls>"],
     "run_at": "document_start"
   }, {
-    "css": ["myvideo/myvideo.css"],
-    "js": ["myvideo/myvideo.js"],
-    "matches": ["*://*.myvideo.ge/*"],
-    "run_at": "document_end"
-  }, {
     "css": ["forumge/forumge.css"],
     "js": ["forumge/forumge.js"],
     "matches": ["*://forum.ge/*"],
