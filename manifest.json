@@ -23,10 +23,6 @@
     "matches": ["*://*.myvideo.ge/*"],
     "run_at": "document_end"
   }, {
-    "js": ["facebook/facebook.js"],
-    "matches": ["*://*.facebook.com/*"],
-    "run_at": "document_end"
-  }, {
     "css": ["forumge/forumge.css"],
     "js": ["forumge/forumge.js"],
     "matches": ["*://forum.ge/*"],
