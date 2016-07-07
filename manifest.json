@@ -29,7 +29,7 @@
     "run_at": "document_end"
   }],
   "options_ui": {
-    "page": "src/options/index.html",
+    "page": "options/options.html",
     "chrome_style": true
   }
 }
