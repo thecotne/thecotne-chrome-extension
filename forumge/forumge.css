@@ -1,17 +1,18 @@
 .thecotne-imageupload {
-	display: block;
-	position: absolute;
-	margin-left: -40px;
-	margin-top: 0px;
-    text-decoration: none !important;
+  display: block;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 0px;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .thecotne-imageupload::after {
-    content: "🖼";
-    display: block;
-    font: 35px/1 "Apple Color Emoji";
+  content: "🖼";
+  display: block;
+  font: 35px/1 "Apple Color Emoji";
 }
 
 .thecotne-imageupload.loading::after {
-    content: "⌛";
+  content: "⌛";
 }

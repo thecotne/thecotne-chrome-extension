@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "chrome": true
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "semi": ["error", "never"],
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "no-param-reassign": ["error", { "props": false }],
+    "no-loop-func": 0
+  }
+}

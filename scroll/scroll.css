@@ -1,43 +1,43 @@
 .thecotne-scroll-top-btn {
-    background-color: rgba(61, 117, 162, 0.7) !important;
-    border-radius: 5px !important;
-    cursor: pointer !important;
-    display: block !important;
-    height: 50px !important;
-    opacity: 0;
-    pointer-events: none;
-    position: fixed !important;
-    right: 10px !important;
-    text-decoration: none !important;
-    top: 10px !important;
-    transition: all 200ms linear !important;
-    width: 50px !important;
-    z-index: 2147483647 !important;
+  background-color: rgba(61, 117, 162, 0.7) !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  display: block !important;
+  height: 50px !important;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed !important;
+  right: 10px !important;
+  text-decoration: none !important;
+  top: 10px !important;
+  transition: all 200ms linear !important;
+  width: 50px !important;
+  z-index: 2147483647 !important;
 }
 
 .thecotne-scroll-top-btn:hover {
-    background-color: rgba(61, 117, 162, 1) !important;
+  background-color: rgba(61, 117, 162, 1) !important;
 }
 
 .thecotne-scroll-top-btn::after {
-    color: #fff !important;
-    content: "▲" !important;
-    display: block !important;
-    font-family: arial !important;
-    font-family: verdana !important;
-    font-size: 40px !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    height: 100% !important;
-    left: 0px !important;
-    line-height: 1 !important;
-    overflow: hidden !important;
-    overflow: visible !important;
-    pointer-events: none !important;
-    position: relative !important;
-    text-align: center;
-    text-decoration: none !important;
-    top: 0px !important;
-    width: 100% !important;
+  color: #fff !important;
+  content: "▲" !important;
+  display: block !important;
+  font-family: arial !important;
+  font-family: verdana !important;
+  font-size: 40px !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  height: 100% !important;
+  left: 0px !important;
+  line-height: 1 !important;
+  overflow: hidden !important;
+  overflow: visible !important;
+  pointer-events: none !important;
+  position: relative !important;
+  text-align: center;
+  text-decoration: none !important;
+  top: 0px !important;
+  width: 100% !important;
 }
 
