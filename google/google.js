@@ -5,12 +5,14 @@ function translateLink(text) {
 function insertTranslateButton() {
   const input = document.getElementById('lst-ib')
   const moreButton = document.getElementById('hdtb-more')
-  if (input && moreButton) {
+  const translateButtonCheck = ! document.querySelector('.thecotne-translate-btn')
+
+  if (input && moreButton && translateButtonCheck) {
     const translateButton = document.createElement('div')
     translateButton.className = 'hdtb-mitem hdtb-imb'
 
     const translateButtonA = document.createElement('a')
-    translateButtonA.className = 'q qs'
+    translateButtonA.className = 'q qs thecotne-translate-btn'
     translateButtonA.href = translateLink(input.value)
     translateButtonA.innerText = 'Translate'
 
@@ -24,10 +26,5 @@ function insertTranslateButton() {
   }
 }
 
-function DOMNodeInserted(e) {
-  if (e.target.id === 'hdtb' || (e.target.querySelector && e.target.querySelector('#hdtb'))) {
-    insertTranslateButton()
-  }
-}
-
-document.addEventListener('DOMNodeInserted', DOMNodeInserted)
+document.addEventListener('DOMContentLoaded', insertTranslateButton)
+document.addEventListener('DOMNodeInserted', insertTranslateButton)
