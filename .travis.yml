@@ -3,6 +3,6 @@ node_js:
   - "6"
 script:
   - npm install
-  - npm run lint
+  - ./tasker lint
 after_success:
-  - npm run update
+  - ./tasker update
