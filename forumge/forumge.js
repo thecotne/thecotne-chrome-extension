@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 const ClientID = 'c85f84102eecd3e'
 
 const postInput = document.querySelector('[name=Post]')
@@ -24,8 +26,8 @@ uploadInput.addEventListener('change', () => {
     body: formData,
     headers: new Headers({
       Accept: 'application/json',
-      Authorization: `Client-ID ${ClientID}`,
-    }),
+      Authorization: `Client-ID ${ClientID}`
+    })
   })
   .then(response => response.json())
   .then(response => {
@@ -40,7 +42,7 @@ uploadButton.addEventListener('click', () => {
   uploadInput.dispatchEvent(clickEvent)
 })
 
-function insertText(text, field) {
+function insertText (text, field) {
   if (field.selectionStart > -1) {
     field.focus()
 

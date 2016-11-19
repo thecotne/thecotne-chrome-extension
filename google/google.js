@@ -1,8 +1,8 @@
-function translateLink(text) {
+function translateLink (text) {
   return `https://translate.google.com/#auto/auto/${encodeURIComponent(text)}`
 }
 
-function createElement(tagName, props, ...childs) {
+function createElement (tagName, props, ...childs) {
   const element = document.createElement(tagName)
   for (const propName in props) {
     element[propName] = props[propName]
@@ -13,19 +13,19 @@ function createElement(tagName, props, ...childs) {
   return element
 }
 
-function insertTranslateButton() {
+function insertTranslateButton () {
   const input = document.getElementById('lst-ib')
   const moreButton = document.getElementById('hdtb-more')
-  const translateButtonCheck = ! document.querySelector('.thecotne-translate-btn')
+  const translateButtonCheck = !document.querySelector('.thecotne-translate-btn')
 
   if (input && moreButton && translateButtonCheck) {
     const translateButtonA = createElement('a', {
       className: 'q qs thecotne-translate-btn',
       href: translateLink(input.value),
-      innerText: 'Translate',
+      innerText: 'Translate'
     })
     const translateButton = createElement('div', {
-      className: 'hdtb-mitem hdtb-imb',
+      className: 'hdtb-mitem hdtb-imb'
     }, translateButtonA)
 
     input.addEventListener('keyup', e => {

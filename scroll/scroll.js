@@ -1,3 +1,6 @@
+/* eslint-env browser */
+/* global chrome */
+
 chrome.storage.sync.get('scrollTop', ({ scrollTop }) => {
   if (scrollTop) {
     const scrollTopBtn = document.createElement('a')
@@ -21,7 +24,7 @@ chrome.storage.sync.get('scrollTop', ({ scrollTop }) => {
   }
 })
 
-function scrollLoop(beginTime, duration, scrollFrom) {
+function scrollLoop (beginTime, duration, scrollFrom) {
   const timePassed = (new Date()).getTime() - beginTime
   const timeLeft = duration - timePassed
 
