@@ -1,5 +1,7 @@
 # thecotne-chrome-extension
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/thecotne/thecotne-chrome-extension.svg)](https://greenkeeper.io/)
+
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 [![Build Status](https://img.shields.io/travis/thecotne/thecotne-chrome-extension/master.svg?style=flat-square&maxAge=300)](https://travis-ci.org/thecotne/thecotne-chrome-extension)
