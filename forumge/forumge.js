@@ -29,11 +29,11 @@ uploadInput.addEventListener('change', () => {
       Authorization: `Client-ID ${ClientID}`
     })
   })
-  .then(response => response.json())
-  .then(response => {
-    uploadButton.classList.remove('loading')
-    insertText(`[IMG]${response.data.link}[/IMG]`, postInput)
-  })
+    .then(response => response.json())
+    .then(response => {
+      uploadButton.classList.remove('loading')
+      insertText(`[IMG]${response.data.link}[/IMG]`, postInput)
+    })
 })
 
 uploadButton.addEventListener('click', () => {
