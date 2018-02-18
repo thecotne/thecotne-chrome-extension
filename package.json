@@ -8,7 +8,7 @@
     "chrome-webstore-manager": "^0.4.1",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^4.1.0",
-    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.4.0",
